@@ -8,4 +8,4 @@ https://github.com/orlandosaraivajr/FATEC_1SEM26_LP2/issues/6
 
 - [ ] Entrega do tema: 21/05
 
-- [ ] Apresentação: 11/06
+- [-] Apresentação: 11/06

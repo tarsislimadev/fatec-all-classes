@@ -54,3 +54,25 @@ Em um grafo ponderado, cada aresta recebe um valor numérico chamado peso. Esse 
 ### Observações
 
 Grafos são úteis para modelar problemas reais em que existe relação entre objetos, permitindo análises como busca, menor caminho e ordenação de dependências.
+
+## Prática - Exemplos
+
+A seguir, exemplos de problemas reais que podem ser modelados e resolvidos com grafos:
+
+- Menor caminho (Shortest Path): rotas em mapas, GPS, menor custo entre cidades (algoritmos: Dijkstra, Bellman-Ford, A*).
+- Árvore geradora mínima (Minimum Spanning Tree): planejamento de redes de energia, cabeamento com custo mínimo (Kruskal, Prim).
+- Fluxo máximo / Corte mínimo: roteamento de tráfego, capacidade de redes, problemas de emparelhamento com capacidade (Ford–Fulkerson, Edmonds–Karp).
+- Emparelhamento em grafos: alocação de tarefas, casamento estável simplificado, pareamento bipartido (Hungarian, Hopcroft–Karp).
+- Ordenação topológica / dependências: escalonamento de tarefas, compilação de projetos com dependências (DAGs).
+- Detecção de ciclos: detecção de dependências circulares, verificação de integridade de pipelines.
+- Conectividade e componentes: identificar clusters em redes sociais, regiões conectadas em mapas.
+- Busca e exploração (BFS/DFS): alcance em redes, verificação de caminhos, resolução de labirintos.
+- Redes sociais e recomendações: modelagem de amizades, influência, recomendações por proximidade.
+- Roteamento em redes de comunicação: encaminhamento de pacotes, balanceamento de carga.
+- Planejamento e logística: roteirização de veículos (problema do caixeiro viajante como variante), otimização de rotas.
+- Análise de fluxo de trabalho e pipelines: detectar gargalos e otimizar processos.
+- Web crawling e análise de links: PageRank, descoberta de comunidades e indexação de páginas.
+- Modelagem de circuitos e dependências elétricas: análise de conexões e falhas.
+- Imagens e visão computacional: segmentação por construção de grafos de pixels e corte mínimo.
+
+Para cada problema, a escolha da representação (lista de adjacência, matriz de adjacência) e do algoritmo influencia diretamente em eficiência e aplicabilidade.

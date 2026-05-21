@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Matriz de Adjacência</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<h1>Matriz de Adjacência</h1>
+	<p>Construa o grafo e veja a matriz de adjacência.</p>
+
+	<div>
+		<label>Vértice: <input id="vname" placeholder="A"></label>
+		<button id="addV">Adicionar Vértice</button>
+	</div>
+	<div>
+		<label>Origem: <input id="mv_from" placeholder="A"></label>
+		<label>Destino: <input id="mv_to" placeholder="B"></label>
+		<label><input type="checkbox" id="mv_directed"> Direcionado</label>
+		<button id="mv_add">Adicionar Aresta</button>
+	</div>
+
+	<div id="matrixArea"></div>
+
+	<script>
+		const verts = [];
+		const indexOf = v=>verts.indexOf(v);
+		let directed = false;
+		let matrix = [];
+
+		function rebuildMatrix(){
+			const n = verts.length;
+			matrix = Array.from({length:n},()=>Array(n).fill(0));
+			const area = document.getElementById('matrixArea');
+			area.innerHTML = '';
+			if (n===0) return area.textContent = '(nenhum vértice)';
+			const tbl = document.createElement('table');
+			const thead = document.createElement('tr');
+			thead.appendChild(document.createElement('th'));
+			verts.forEach(v=>{const th=document.createElement('th');th.textContent=v;thead.appendChild(th)});
+			tbl.appendChild(thead);
+			for(let i=0;i<n;i++){
+				const tr = document.createElement('tr');
+				const th = document.createElement('th'); th.textContent = verts[i]; tr.appendChild(th);
+				for(let j=0;j<n;j++){
+					const td = document.createElement('td'); td.textContent = matrix[i][j]; tr.appendChild(td);
+				}
+				tbl.appendChild(tr);
+			}
+			area.appendChild(tbl);
+		}
+
+		document.getElementById('addV').addEventListener('click', ()=>{
+			const v = document.getElementById('vname').value.trim();
+			if (!v) return alert('Informe um vértice');
+			if (!verts.includes(v)) verts.push(v);
+			rebuildMatrix();
+		});
+
+		document.getElementById('mv_add').addEventListener('click', ()=>{
+			const a = document.getElementById('mv_from').value.trim();
+			const b = document.getElementById('mv_to').value.trim();
+			directed = document.getElementById('mv_directed').checked;
+			if (!a||!b) return alert('Origem e destino são necessários');
+			if (!verts.includes(a)) verts.push(a);
+			if (!verts.includes(b)) verts.push(b);
+			rebuildMatrix();
+			const i = indexOf(a), j = indexOf(b);
+			matrix[i][j] = 1;
+			if (!directed) matrix[j][i]=1;
+			// re-render values
+			const cells = document.querySelectorAll('#matrixArea td');
+			let idx=0;
+			for(let r=0;r<verts.length;r++){
+				for(let c=0;c<verts.length;c++){
+					cells[idx++].textContent = matrix[r][c];
+				}
+			}
+		});
+
+		rebuildMatrix();
+	</script>
+</body>
+</html>

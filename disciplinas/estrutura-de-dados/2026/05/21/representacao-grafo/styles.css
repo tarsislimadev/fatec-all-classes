@@ -1,0 +1,63 @@
+/* Consolidated stylesheet for representacao-grafo demos */
+html, body {
+  height: 100%;
+}
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+  color: #222;
+  line-height: 1.45;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+ul {
+  line-height: 1.8;
+}
+
+/* shared controls */
+input,
+button {
+  padding: 6px;
+  margin: 4px;
+  font-size: 14px;
+}
+
+/* adjacency list demo */
+#graph {
+  border: 1px solid #ddd;
+  height: 300px;
+  margin-top: 12px;
+  overflow: auto;
+  padding: 8px;
+  background: #fff;
+}
+
+pre {
+  background: #f8f8f8;
+  padding: 12px;
+  overflow: auto;
+}
+
+/* adjacency matrix demo */
+table {
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+td, th {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+  min-width: 28px;
+}
+
+/* small responsive tweaks */
+@media (max-width: 480px) {
+  body { padding: 0 10px; }
+  input, button { font-size: 13px; padding: 6px 8px; }
+}

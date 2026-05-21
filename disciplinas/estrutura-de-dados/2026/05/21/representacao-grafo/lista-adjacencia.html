@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Lista de Adjacência</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<h1>Lista de Adjacência</h1>
+	<p>Adicione vértices e arestas para ver a lista de adjacência.</p>
+
+	<div>
+		<label>Vértice: <input id="vertex" placeholder="ex: A"></label>
+		<button id="addVertex">Adicionar Vértice</button>
+	</div>
+	<div>
+		<label>Origem: <input id="from" placeholder="A"></label>
+		<label>Destino: <input id="to" placeholder="B"></label>
+		<label><input type="checkbox" id="directed"> Direcionado</label>
+		<button id="addEdge">Adicionar Aresta</button>
+	</div>
+
+	<div id="graph"></div>
+
+	<h2>Representação (Lista)</h2>
+	<pre id="adjList">{}</pre>
+
+	<script>
+		const vertices = new Set();
+		const adj = {}; // adjacency list
+
+		function render() {
+			document.getElementById('adjList').textContent = JSON.stringify(adj, null, 2);
+			renderGraph();
+		}
+
+		document.getElementById('addVertex').addEventListener('click', () => {
+			const v = document.getElementById('vertex').value.trim();
+			if (!v) return alert('Informe um vértice');
+			vertices.add(v);
+			if (!adj[v]) adj[v] = [];
+			render();
+		});
+
+		document.getElementById('addEdge').addEventListener('click', () => {
+			const a = document.getElementById('from').value.trim();
+			const b = document.getElementById('to').value.trim();
+			const directed = document.getElementById('directed').checked;
+			if (!a || !b) return alert('Origem e destino são necessários');
+			vertices.add(a); vertices.add(b);
+			if (!adj[a]) adj[a] = [];
+			if (!adj[a].includes(b)) adj[a].push(b);
+			if (!directed) {
+				if (!adj[b]) adj[b] = [];
+				if (!adj[b].includes(a)) adj[b].push(a);
+			}
+			render();
+		});
+
+		function renderGraph(){
+			const container = document.getElementById('graph');
+			container.innerHTML = '';
+			// simple textual visualization
+			const ul = document.createElement('ul');
+			Array.from(vertices).sort().forEach(v=>{
+				const li = document.createElement('li');
+				li.textContent = v + ' → ' + (adj[v] ? adj[v].join(', ') : '');
+				ul.appendChild(li);
+			});
+			container.appendChild(ul);
+		}
+
+		render();
+	</script>
+</body>
+</html>

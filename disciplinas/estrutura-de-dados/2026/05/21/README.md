@@ -76,3 +76,11 @@ A seguir, exemplos de problemas reais que podem ser modelados e resolvidos com g
 - Imagens e visão computacional: segmentação por construção de grafos de pixels e corte mínimo.
 
 Para cada problema, a escolha da representação (lista de adjacência, matriz de adjacência) e do algoritmo influencia diretamente em eficiência e aplicabilidade.
+
+## Aula 9
+
+https://github.com/orlandosaraivajr/FATEC_1SEM26_ED/tree/main/aula9
+
+### Atividade
+
+[Exercícios Grafos](./Exercicios-Grafos.pdf)

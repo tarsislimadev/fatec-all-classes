@@ -63,17 +63,3 @@ Um teste visual importante é a **reta vertical**: se uma reta vertical cortar o
 5. Relação em que um mesmo valor de entrada produz duas saídas diferentes.
 
 **Resposta esperada:** os itens 1, 3 e 4 representam funções; os itens 2 e 5 não representam funções.
-
-### Definição
-
-### Domínio
-
-### Contradomínio
-
-### Imagem
-
-### Exemplos de leitura
-
-### Interpretação de gráficos
-
-### Exercícios (para identificar se uma relação é ou não uma função)

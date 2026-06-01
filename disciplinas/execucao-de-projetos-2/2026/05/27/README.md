@@ -42,3 +42,26 @@ Principais desafios e como foram tratados:
 - Comunicação técnica e documentação: percebi que parte do trabalho precisava ser reproduzível por outros integrantes. Padronizei templates para documentação de procedimentos e para registro de comandos/scripts usados, facilitando a continuidade do projeto após a entrega.
 
 Resultados de aprendizagem: melhorei a capacidade de diagnosticar problemas em bases de dados, a habilidade de traduzir requisitos de negócio em tarefas técnicas rastreáveis e a competência de mediar decisões técnicas em equipe. Essas ações contribuíram para entregas mais limpas, maior rastreabilidade e redução de retrabalho nas sprints seguintes.
+
+
+---
+
+Apresentação em vídeo:
+
+Youtube: https://www.youtube.com/watch?v=OztoN8UlzxA
+
+MVP:
+
+URL: http://35.158.190.88/
+
+Acessos: 
+
+Email: admin@example.com | Password: Admin123!
+
+Email: test@example.com | Password: Password123!
+
+Prints:
+
+![MVP](./mvp.png)
+
+![e-mail](./email.png)

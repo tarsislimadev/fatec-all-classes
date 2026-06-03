@@ -3,6 +3,8 @@
     "ms-python.python",
     "tomoki1207.pdf",
     "ms-toolsai.jupyter",
-    "mechatroner.rainbow-csv"
+    "mechatroner.rainbow-csv",
+    "google.geminicodeassist",
+    "google.gemini-cli-vscode-ide-companion"
   ]
 }

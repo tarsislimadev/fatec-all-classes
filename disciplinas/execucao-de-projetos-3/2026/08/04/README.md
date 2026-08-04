@@ -1,14 +1,18 @@
 # Encontro 01 - 2026/08/04
 
-- [ ] Projeto de Inteligencia Artificial no contexto da Saúde.
+- [ ] Projeto de Inteligencia Artificial
 
 ## Empresa cliente
 
 Nome da empresa: Yeb?
 
-Nome da pessoa responsável:
+Nome da pessoa responsável: 
 
 E-mail para contato:
+
+## Projeto
+
+https://github.com/tarsislimadev/fatec-yeb-db
 
 ## Pendências da Squad e Planos de Ação
 

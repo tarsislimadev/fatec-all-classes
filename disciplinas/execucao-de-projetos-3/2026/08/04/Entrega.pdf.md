@@ -16,13 +16,13 @@ O projeto encontra-se na fase de estruturação. Existem 11 *Issues* abertas no 
 - [ ] Refinamento de Requisitos: Transformar as *Issues* abertas no GitHub e Trello em requisitos técnicos e funcionais documentados.
 - [ ] Cronograma de Entregas: Estabelecer datas para cada fase do ciclo de vida do projeto.
 
-### 🛠️ Desenvolvimento Técnico
+### Desenvolvimento Técnico
 
 - [ ] Modelagem de Dados: Estruturar o banco de dados para suportar a aplicação de IA.
 - [ ] Desenvolvimento do Core de IA: Implementar a lógica de inteligência artificial conforme os requisitos.
 - [ ] Infraestrutura: Configurar o ambiente de deploy e integração contínua (CI/CD).
 
-### ✅ Qualidade e Implementação
+### Qualidade e Implementação
 
 - [ ] Plano de Testes: Criar cenários de teste para validar a precisão da IA.
 - [ ] Homologação: Validar a solução com o cliente final.

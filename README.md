@@ -19,3 +19,7 @@ O comprador se identifica para comprar sem a necessidade de passar pelo caixa pe
 ### [projeto geladeira](./projetos/geladeira/README.md)
 
 Aplicativo de auto-atendmento para produto retirado da geladeira da Fatec.
+
+## Ferramentas Uteis
+
+https://www.markdowntopdf.com/editor

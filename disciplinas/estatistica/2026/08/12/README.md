@@ -63,3 +63,21 @@ O prefessor estudou em Botucatu.
 ## 
 
 Enviesar: utilizado em contextos de estatística, jornalismo e ciências sociais para descrever a manipulação ou viés inconsciente de dados e interpretações.
+
+## 
+
+- O que é ser exato?
+
+- O que é ser preciso?
+
+## 
+
+De "y = ax + b" para "y = ax + b + ɛ", onde ɛ é a margem de erro.
+
+## Exercicios
+
+1. De exemplos de população e amostra no contexto do curso de IA.
+
+2. Pesquise sobre a diferença (e definição) de precisão e exatidão.
+
+3. Pesquise sobre representatividade da amostra.

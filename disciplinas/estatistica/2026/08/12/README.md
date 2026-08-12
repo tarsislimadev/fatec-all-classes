@@ -25,3 +25,17 @@ c. 145,3248 para uma casa decimal
 3. Um produto custa R$ 2.800,00 e recebeu desconto de 15%. Qual é o novo preço?
 
 4. Um salário passou de R$ 3.500,00 para R4 3.920,00. Qual foi o aumento percentual?
+
+## 
+
+"Na estatistica, é muito dificil falar o que é grande e o que é pequeno", disse o professor.
+
+O prefessor estudou em Botucatu.
+
+"A IA conseguiu antecipar, entre 5 e 7 anos, um diagnostico mamografico", disse o professor.
+
+"Lembra da informação [não do dado]"
+
+##
+
+Pausa para ir no banheiro.

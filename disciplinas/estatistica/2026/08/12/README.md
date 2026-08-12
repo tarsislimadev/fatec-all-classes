@@ -41,3 +41,25 @@ O prefessor estudou em Botucatu.
 "(novo - antigo) / antigo"
 
 ![Fórmula da variação percentual](./porcentagem.png)
+
+## Elementos Estatísticos
+
+- População - conjunto de elementos com uma caracteristica
+
+- Amostra (representativa) - subconjunto da população (parte)
+
+##
+
+"As vezes, não temos tempo, dinheiro ou infraestrutura para fazer"
+
+## 
+
+- Descritiva
+
+- Inferencial
+
+"A partir de uma amostra, eu vou inferir para a população inteira."
+
+## 
+
+Enviesar: utilizado em contextos de estatística, jornalismo e ciências sociais para descrever a manipulação ou viés inconsciente de dados e interpretações.

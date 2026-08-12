@@ -38,4 +38,6 @@ O prefessor estudou em Botucatu.
 
 ##
 
-Pausa para ir no banheiro.
+"(novo - antigo) / antigo"
+
+![Fórmula da variação percentual](./porcentagem.png)

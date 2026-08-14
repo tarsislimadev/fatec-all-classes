@@ -8,4 +8,4 @@ Tipos de Estrutura
 
 ## Atividade
 
-- Ver no WhatsApp
+![atividade](./.jpg)

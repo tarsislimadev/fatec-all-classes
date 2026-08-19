@@ -39,7 +39,7 @@ P: Uma base de dados de clientes de um e-commerce tem 1000 clientes cadastrados,
 
 R: ...
 
-## Exericios
+## Exercícios
 
 1. Para um projeto de IA, é necessário extrair uma amostra de 200 usuários de um banco de dados de um aplicativo de entregas para testar um sistema de recomendação. A população total é de 200 usuários, divididos em 3 categoria: Bronze (1200), Silver (600), Gold (200). Calcule quantos clientes de cada categoria devem constar na sua amostra.
 
@@ -64,3 +64,14 @@ Para arrendondar, a casa decimal é:
 - qualitativa: palavra/nome
 - nominais: classificação/categorização
 - ordinais: sequencia/nivel
+
+## Exercícios
+
+1. Classifique as variaveis
+
+a. id do funcionário
+b. cargo
+c. quantidade de projetos concluidos
+d. RA do aluno
+e. nota final de uma linha
+f. tempo de resposta do servidor (em milissegundos)

@@ -44,3 +44,10 @@ R: ...
 1. Para um projeto de IA, é necessário extrair uma amostra de 200 usuários de um banco de dados de um aplicativo de entregas para testar um sistema de recomendação. A população total é de 200 usuários, divididos em 3 categoria: Bronze (1200), Silver (600), Gold (200). Calcule quantos clientes de cada categoria devem constar na sua amostra.
 
 2. Você está desenvolvendo um sistema para recomendar alunos para vagas de monitoria na Fatec. A população elegível é de 3 períodos: matutino (100), vespertino (30), noturno (60). Esquematize uma amostragem estratificada proporcional de 25 alunos.
+
+## 
+
+Para arrendondar, a casa decimal é:
+
+- Maior ou igual a 5? Sobe.
+- Menor que 5? Mantem.

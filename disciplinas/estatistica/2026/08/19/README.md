@@ -51,3 +51,16 @@ Para arrendondar, a casa decimal é:
 
 - Maior ou igual a 5? Sobe.
 - Menor que 5? Mantem.
+
+## Variável
+
+é uma caracteristica de uma população ou amostra que pode ser medida ou categorizada.
+
+![variavel](./variavel.png)
+
+- quantitativa: numeros
+- discreta: contagem
+- continua: real
+- qualitativa: palavra/nome
+- nominais: classificação/categorização
+- ordinais: sequencia/nivel

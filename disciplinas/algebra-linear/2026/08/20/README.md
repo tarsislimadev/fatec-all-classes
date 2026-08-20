@@ -39,3 +39,17 @@ Para realizar essa operação, a matriz divididora ($B$) deve ser "quadrada e n�
 * "Divisão à direita": $A \cdot B^{-1}$ (solução para $xB = A$).
 
 Se a intenção é dividir cada elemento de uma matriz por um número real, trata-se de uma "multiplicação por escalar" (ou matriz $1 \times 1$), onde cada elemento da matriz é dividido individualmente pelo número.
+
+## Multiplicação por escalar
+
+A "multiplicação por escalar" é uma operação fundamental na álgebra linear que consiste em multiplicar cada elemento de um vetor ou matriz por um número real (o escalar).
+
+### Vetores
+Ao multiplicar um vetor por um escalar, altera-se a sua magnitude (comprimento) sem mudar sua direção, ou inverte-se a direção se o escalar for negativo.
+*   "Cálculo:" Multiplica-se o escalar $k$ por cada componente do vetor.
+*   "Exemplo:" Se $\vec{A} = 5\mathbf{i} - 2\mathbf{j} + 3\mathbf{k}$ e $k = 4$, o resultado é $\vec{R} = 20\mathbf{i} - 8\mathbf{j} + 12\mathbf{k}$.
+
+### Matrizes
+A multiplicação de uma matriz por um escalar resulta em uma nova matriz de mesmas dimensões, onde cada elemento foi multiplicado pelo valor do escalar.
+*   "Definição:" Se $A$ é uma matriz e $k$ é um escalar, o produto $k \cdot A$ tem elementos $b_{ij} = k \cdot a_{ij}$.
+*   "Propriedades:" Incluem a distributividade ($k(A+B) = kA + kB$) e a associatividade ($(k \cdot m)A = k(mA)$).

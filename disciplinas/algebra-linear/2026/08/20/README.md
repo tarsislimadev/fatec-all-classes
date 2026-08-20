@@ -8,9 +8,9 @@ Para que a operação seja possível, deve-se respeitar a "condição de existê
 
 ### Características Principais
 
-*   "Dimensão do Resultado": Se a primeira matriz tem dimensão $m \times n$ e a segunda $n \times p$, a matriz produto resultante terá dimensão "$m \times p$" (linhas da primeira $\times$ colunas da segunda).
-*   "Não Comutatividade": Em geral, a ordem importa, ou seja, "$A \cdot B \neq B \cdot A$".
-*   "Multiplicação por Escalar": Quando se multiplica uma matriz por um número real $k$, este é multiplicado por "cada elemento" individual da matriz.
+* "Dimensão do Resultado": Se a primeira matriz tem dimensão $m \times n$ e a segunda $n \times p$, a matriz produto resultante terá dimensão "$m \times p$" (linhas da primeira $\times$ colunas da segunda).
+* "Não Comutatividade": Em geral, a ordem importa, ou seja, "$A \cdot B \neq B \cdot A$".
+* "Multiplicação por Escalar": Quando se multiplica uma matriz por um número real $k$, este é multiplicado por "cada elemento" individual da matriz.
 
 ### Exemplo de Cálculo
 
@@ -27,3 +27,15 @@ c_{11} = (1 \cdot 5) + (2 \cdot 7) = 5 + 14 = 19
 $$
 
 O processo se repete para cada combinação de linha e coluna.
+
+## Divisão de matrizes
+
+Divisão de matrizes
+
+Tecnicamente, "não existe definição para divisão de matrizes", pois a operação não é comutativa e nem todas as matrizes possuem inversa. O processo equivalente é a "multiplicação da primeira matriz pelo inverso da segunda", representado como $A \cdot B^{-1}$.
+
+Para realizar essa operação, a matriz divididora ($B$) deve ser "quadrada e não-singular" (determinante diferente de zero). Como a multiplicação de matrizes não é comutativa, é necessário distinguir entre:
+* "Divisão à esquerda": $B^{-1} \cdot A$ (solução para $Bx = A$).
+* "Divisão à direita": $A \cdot B^{-1}$ (solução para $xB = A$).
+
+Se a intenção é dividir cada elemento de uma matriz por um número real, trata-se de uma "multiplicação por escalar" (ou matriz $1 \times 1$), onde cada elemento da matriz é dividido individualmente pelo número.

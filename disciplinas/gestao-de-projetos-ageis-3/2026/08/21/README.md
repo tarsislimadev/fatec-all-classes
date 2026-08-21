@@ -6,3 +6,4 @@
 
 [BMC](./bmc.md)
 
+![BMC](./bmc.png)

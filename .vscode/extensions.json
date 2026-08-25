@@ -5,6 +5,7 @@
     "ms-toolsai.jupyter",
     "mechatroner.rainbow-csv",
     "google.geminicodeassist",
-    "google.gemini-cli-vscode-ide-companion"
+    "google.gemini-cli-vscode-ide-companion",
+    "ollama.ollama"
   ]
 }

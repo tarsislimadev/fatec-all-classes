@@ -16,6 +16,8 @@
 
 - User Stories (US): descrição de uma necessidade de forma simples e centrada no usuário
 
-## 
-
 Como [papel do usuário], quero [funcionalidade desejada] para [valor ou benefício para o negócio].
+
+## Entregável
+
+[Entrega](./entrega.md)

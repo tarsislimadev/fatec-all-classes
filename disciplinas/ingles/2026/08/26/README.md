@@ -2,6 +2,8 @@
 
 ## Cognatos
 
+Palavras que tem origem, grafia e significado parecidos em duas linguas diferentes.
+
 - count on -> contar com [alguém]
 
 ## Falsos Cognatos

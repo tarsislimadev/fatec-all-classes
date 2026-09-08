@@ -26,11 +26,11 @@ Banco de Dados Yeb
 
 #### Sprint 1
 
-- [ ] Vamos apresentar a primeira versão do MVP pra Yeb em em encontro na Fatec
+- [ ] Vamos apresentar a versão atual do MVP para a Yeb em encontro futuro na Fatec.
 
 #### Sprint 2 e 3
 
-Por estar dependente a confirmação da continuidade do projeto, ainda não definimos as tarefas das Sprints 2 e 3
+Por estar pendente de confirmação da continuidade do projeto, ainda não definimos as tarefas das Sprints 2 e 3
 
 ### Jornadas do usuário
 

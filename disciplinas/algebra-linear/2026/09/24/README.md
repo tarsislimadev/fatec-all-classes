@@ -58,3 +58,8 @@ No sistema `x + y = 5` e `2x - y = 4`, a soma das equações elimina `y`: `3x = 
 Representa-se o sistema por uma matriz aumentada e aplicam-se operações elementares nas linhas: trocar duas linhas, multiplicar uma linha por um número não nulo ou somar a uma linha um múltiplo de outra.
 
 O objetivo é obter uma forma escalonada, com zeros abaixo dos pivôs. Em seguida, resolve-se o sistema por substituição regressiva. Uma linha como `[0 0 | c]`, com `c ≠ 0`, indica SI; uma linha totalmente nula indica que há uma dependência entre as equações. O número de pivôs permite identificar a classificação do sistema.
+
+## 
+
+Sistema Linear Homogêneo não pode ser Sistema Impossível
+

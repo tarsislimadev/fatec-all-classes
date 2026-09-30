@@ -38,4 +38,4 @@ Li = Q1 - 1,5 • AI
 
 ### limite superior (ls)
 
-Ls = Q3 - 1,5 • AI
+Ls = Q3 + 1,5 • AI

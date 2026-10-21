@@ -116,6 +116,24 @@ P(3) = 3! = 3 x 2 x 1 = 6
 
 As possibilidades são: ABC, ACB, BAC, BCA, CAB e CBA.
 
+### Permutação com repetição (letras iguais)
+
+A permutação com repetição representa o número de maneiras de ordenar elementos quando alguns deles são iguais. Para evitar contar a mesma sequência várias vezes, dividimos o fatorial do total de elementos pelos fatoriais das quantidades repetidas.
+
+Fórmula:
+
+P(n; a, b, ...) = n! / (a! b! ...)
+
+Exemplo:
+
+De quantas maneiras podemos organizar as letras da palavra **BANANA**?
+
+A palavra tem 6 letras, sendo 3 letras A e 2 letras N:
+
+P(6; 3, 2) = 6! / (3! 2!) = 60
+
+Portanto, é possível formar 60 sequências diferentes.
+
 ### Resumo
 
 - Princípio Fundamental da Contagem: multiplica as opções
@@ -123,3 +141,4 @@ As possibilidades são: ABC, ACB, BAC, BCA, CAB e CBA.
 - Combinação: escolhe grupos sem considerar ordem
 - Arranjo: escolhe sequências considerando a ordem
 - Permutação simples: ordena todos os elementos distintos
+- Permutação com repetição: ordena elementos com repetições, dividindo pelos fatoriais das quantidades repetidas

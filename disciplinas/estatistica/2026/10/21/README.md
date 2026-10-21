@@ -100,9 +100,26 @@ A(4, 3) = 4! / (4 - 3)! = 4 x 3 x 2 = 24
 
 Ou seja, a ordem dos dígitos altera a senha, então 123 e 321 são arranjos diferentes.
 
+### Permutação Simples (letras distintas)
+
+A permutação simples representa o número de maneiras de ordenar todos os n elementos distintos de um conjunto. Como todos os elementos são utilizados, a ordem importa.
+
+Fórmula:
+
+P(n) = n!
+
+Exemplo:
+
+De quantas maneiras podemos organizar as letras A, B e C em uma sequência?
+
+P(3) = 3! = 3 x 2 x 1 = 6
+
+As possibilidades são: ABC, ACB, BAC, BCA, CAB e CBA.
+
 ### Resumo
 
 - Princípio Fundamental da Contagem: multiplica as opções
 - Fatorial: produto dos números até n
 - Combinação: escolhe grupos sem considerar ordem
 - Arranjo: escolhe sequências considerando a ordem
+- Permutação simples: ordena todos os elementos distintos

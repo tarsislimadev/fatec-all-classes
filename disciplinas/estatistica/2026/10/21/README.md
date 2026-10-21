@@ -142,3 +142,11 @@ Portanto, é possível formar 60 sequências diferentes.
 - Arranjo: escolhe sequências considerando a ordem
 - Permutação simples: ordena todos os elementos distintos
 - Permutação com repetição: ordena elementos com repetições, dividindo pelos fatoriais das quantidades repetidas
+
+### Exemplos
+
+1. Quantos números com 3 algarismos podem ser formados?
+
+2. Quantos números com 3 algarismos distintos podem ser formados?
+
+3. Qual é a diferença da quantidade de placas novas e antigas?

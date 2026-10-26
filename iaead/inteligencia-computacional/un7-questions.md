@@ -1,0 +1,21 @@
+# Inteligência Computacional
+
+## Unidade 7
+
+### Perguntas Avaliativas
+
+Pergunta: Proteger as senhas dos usuários é um aspecto crítico do desenvolvimento de aplicativos. Uma das melhores maneiras de proteger senhas é utilizar cálculos de hash. Hashing é um processo de transformação de senhas de texto simples em uma série de caracteres de comprimento fixo que não podem ser trocados. Neste artigo, investigaremos como fazer hash de senhas em Python, falando sobre a estrutura da linguagem e os cálculos incluídos. Também forneceremos dois exemplos reais de código executável para demonstrar diferentes abordagens para hash de senha. Disponível em: https://pt.python-3.com/?p=1647#google_vignette Acesso em: 10/07/25. Dada a função hashing, suponha que estamos trabalhando com módulo 5. Ao analisar o intervalo de 5 a 10 podemos afirmar que:
+
+Resposta: A colisão ocorrerá no 0
+
+Pergunta: O que é Hash Table?; A tabela de hash é uma estrutura de dados que apresenta dados na forma de par de valores-chave. A chave é usada como índice para acessar o valor ou dados. Cada dado é associado a uma chave e cada chave é um número inteiro; Em contexto semelhante à tabela de hash é a Tabela de endereço direto (DAT), quando temos um pequeno conjunto de números para pesquisar, podemos usar a tabela de endereço direto, aqui não podemos ter dois valores apontados pela mesma chave. É semelhante à estrutura de dados List, onde temos um índice exclusivo para cada elemento. Uma das principais limitações dessa tabela é o espaço ocupado pelo número de chaves e, com grande número de chaves, teremos grande valor como índice; Na tabela de hash, as chaves são processadas para obter um novo índice, que é então mapeado para o valor ou dados. Este processo é denominado Hashing. A função que processa a chave para obter um novo índice é chamada de função Hashing; Disponível em: https://ichi.pro/pt/tabelas-de-hash-e-funcoes-de-hash-em-python-um-mergulho-profundo-139247200060567 Acessado em 10/07/25. Analise as afirmações: I - Detalhes de Implementação => Alocamos a estrutura dinamicamente na inicialização. II - Em isFull, basta comparar o número de elementos inseridos com o tamanho máximo permitido. III- Por essa parte do código sabemos que o contexto está relacionado com alunos. Estão corretas: IV- É parte da estrutura de um código (hash). Estão corretas:
+
+Resposta: I, II, III e IV.
+
+Pergunta: Imagine um pequeno país (bem menos que 100 mil cidadãos) onde os números de CPF têm apenas 5 dígitos decimais. Considere a tabela que leva CPFs em nomes:; chave valor associado; 01555 Ronaldo; 01567 Pelé; ... ...; 80114 Maradona; 80320 Dunga; 95222 Romário; Como armazenar a tabela? Resposta: vetor de 100 mil posições. Use a própria chave como índice do vetor!; O vetor é conhecido com tabela de hash e; terá muitas posições vagas (desperdício de espaço), mas; a busca (get) e a inseção (put) serão extremamente rápidas.; Disponível em: https://www.ime.usp.br/~pf/estruturas-de-dados/aulas/st-hash.html Acessado em 10 de julho de 2025.; As tabelas hash e a função hashing dependem do conhecimento de aritmética modular. Podemos afirmar que 26 mod 9 é:
+
+Resposta: 8
+
+Pergunta: Vantagens do uso do hash em Python; Pesquisas rápidas; Uma das principais vantagens do uso do hash em Python é a sua capacidade de realizar pesquisas rápidas. Por meio do hash, é possível encontrar rapidamente um valor específico em uma grande quantidade de dados. Isso é especialmente útil em aplicações que envolvem a busca e recuperação de informações, como bancos de dados.; Integridade e segurança dos dados; Além disso, o hash em Python também pode ser utilizado para garantir a integridade e segurança dos dados. Através do hash, é possível verificar se um arquivo foi alterado ou corrompido. Isso é muito importante em aplicações que lidam com informações sensíveis, como senhas ou dados financeiros.; Disponível em: https://awari.com.br/aprenda-a-usar-o-hash-em-python-para-otimizar-suas-aplicacoes/ acessado em 10/07/25; As estruturas apresentam propriedades que permitem distinguir entre diferentes estruturas, por exemplo: grafo, fila, tabela hash, pilha, etc. Podemos descrever a estrutura hash como uma estrutura:
+
+Resposta: que mapeia a chave de busca diretamente para um endereço de memória (endereço base).

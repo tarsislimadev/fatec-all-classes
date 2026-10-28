@@ -20,7 +20,7 @@ assume valores dentro de um intervalo (valores decimais)
 
 Uma loja acompanha a quantidade de vendas realizadas durante um intervalo de 30 minutos.
 
-## Distribuição de Bernoulli
+## [Distribuição de Bernoulli](https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_de_Bernoulli)
 
 Modelo mais simples e a base para decisões sob incerteza.
 
@@ -32,4 +32,4 @@ Modela cenários onde existe apenas 2 resultados possíveis:
 
 - 1 (sucesso): probabilidade `p`
 
-- 0 (fracasso): probabilidade `1-p`
+- 0 (fracasso): probabilidade `1 - p = q`

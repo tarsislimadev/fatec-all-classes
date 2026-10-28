@@ -15,3 +15,7 @@ assume valores que podem ser contados
 ii) V.A. contínua
 
 assume valores dentro de um intervalo (valores decimais)
+
+## Exemplo
+
+Uma loja acompanha a quantidade de vendas realizadas durante um intervalo de 30 minutos.

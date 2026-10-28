@@ -55,3 +55,13 @@ Onde:
 
 Em outras palavras, a fórmula multiplica a chance de ter `k` sucessos, considera a chance de falha nos demais ensaios e conta quantas maneiras diferentes esse resultado pode acontecer.
 
+## Exercícios
+
+1) Um vendedor aborda 3 clientes (n=3). A chance de fechar uma venda com qualquer cliente é de 40% (p=0.4). O gerente quer saber: qual é a probabilidade exata desse vendedor fechar 2 vendas (k=2)?
+
+...
+
+2) Um fornecedor entrega componentes eletrônicos em lotes. Historicamente, 10% das peças têm defeito (p=0.1). É decidido testar uma amostra de 4 peças (n=4). Qual a probabilidade de encontrar exatamente  1 peça com defeito (k=1)?
+
+...
+

@@ -13,3 +13,17 @@ Podcast de 10 minutos
 [Podcast Preparation FATEC RC](./Podcast_Preparation_FATEC_RC.pdf)
 
 [PROJECT Instructions](./PROJECT_Instructions%20.pdf)
+
+## Projeto
+
+https://mism-saude-mulher.streamlit.app
+
+### O que é o projeto?
+
+Um banco de dados da saúde dad mulher
+
+### Minha função pro Podcast
+
+- [ ] Encontrar vieses do projeto
+
+- [ ] Encontrar problemas jurídicos (LGPD)

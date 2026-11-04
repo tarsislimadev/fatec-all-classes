@@ -79,3 +79,5 @@ P(a ≤ X ≤ b) = P(X ≤ b) - P(X ≤ a - 1)
 A distribuição de Poisson pode aproximar uma distribuição binomial quando `n` é grande, `p` é pequeno e `λ = n · p`. Ela é especialmente útil quando contar diretamente todas as combinações da binomial seria trabalhoso.
 
 Ao resolver um problema, primeiro identifique a unidade do intervalo, determine a taxa média `λ`, defina o número de ocorrências `k` e então aplique a fórmula adequada.
+
+## 

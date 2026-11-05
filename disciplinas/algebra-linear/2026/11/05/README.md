@@ -230,6 +230,5 @@ As colunas de `P` sao autovetores de `A`, e os elementos da diagonal de `D` sao 
 ## Referencias
 
 - WIKIPEDIA. [Transformacao linear](https://pt.wikipedia.org/wiki/Transforma%C3%A7%C3%A3o_linear). Acesso em: 5 nov. 2026.
-- WIKIPEDIA. [Autovalor e autovetor](https://pt.wikipedia.org/wiki/Autovalor_e_autovetor). Acesso em: 5 nov. 2026.
-- UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL. Instituto de Matematica e Estatistica. [Transformacoes lineares e exemplos](https://www.ufrgs.br/reamat/AlgebraLinear/livro/s3-transformax00e7x00f5es_lineares.html). Acesso em: 5 nov. 2026.
+- WIKIPEDIA. [Autovalores e autovetores](https://pt.wikipedia.org/wiki/Autovalores_e_autovetores). Acesso em: 5 nov. 2026.
 - LIMA, Elon Lages. *Algebra Linear*. 9. ed. Rio de Janeiro: IMPA, 2016.

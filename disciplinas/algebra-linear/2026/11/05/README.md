@@ -1,85 +1,127 @@
 # Encontro 2026/11/05 - Algebra Linear
 
-## Transformações Lineares
+## Transformacoes lineares
 
-Uma transformação linear é uma função entre espaços vetoriais que preserva a soma de vetores e a multiplicação por escalares. Para uma transformação `T`, devem valer, para quaisquer vetores `u` e `v` e escalar `k`:
+Uma transformacao linear, tambem chamada de aplicacao linear, e uma funcao entre espacos vetoriais sobre o mesmo corpo que preserva as operacoes de soma e multiplicacao por escalar.
+
+Se `T: V -> W`, entao `T` e linear quando, para quaisquer `u, v` em `V` e qualquer escalar `a`,
 
 ```text
 T(u + v) = T(u) + T(v)
-T(kv) = kT(v)
+T(a v) = a T(v)
 ```
 
-Essas propriedades podem ser reunidas em uma única expressão:
+Essas duas propriedades podem ser resumidas pela preservacao de combinacoes lineares:
 
 ```text
-T(au + bv) = aT(u) + bT(v)
+T(a u + b v) = a T(u) + b T(v)
 ```
 
-onde `a` e `b` são escalares. Exemplos incluem rotações, reflexões, projeções e ampliações. Uma transformação linear de `R^n` em `R^m` pode ser representada por uma matriz `A`, de modo que `T(x) = Ax`.
-
-### Núcleo e imagem
-
-O núcleo de `T` é o conjunto dos vetores enviados ao vetor nulo:
+Assim, uma transformacao linear nao desloca a origem. De fato:
 
 ```text
-Ker(T) = {v | T(v) = 0}
+T(0) = 0
+T(-v) = -T(v)
 ```
 
-A imagem é o conjunto de todos os vetores que podem ser obtidos por `T`:
+### Exemplos e contraexemplo
+
+Sao exemplos de transformacoes lineares:
+
+- `T(x) = 3x`, de `R` em `R`;
+- `T(x, y) = x + y`, de `R^2` em `R`;
+- `T(x, y) = (3x + y, 2x - 2y)`, de `R^2` em `R^2`;
+- a derivacao `f -> f'`, do espaco das funcoes derivaveis para o espaco das funcoes reais.
+
+A funcao `T(x) = x + c`, com `c` diferente de zero, nao e linear, pois `T(0) = c` e nao `0`. No caso de funcoes reais, uma reta `y = ax` e linear; ja `y = ax + b`, com `b` diferente de zero, e uma funcao afim.
+
+### Nucleo e imagem
+
+O nucleo de `T` e o conjunto dos vetores do dominio que sao enviados ao vetor nulo do contradominio:
 
 ```text
-Im(T) = {T(v) | v pertence ao domínio}
+Ker(T) = {v em V | T(v) = 0}
 ```
 
-Se `T` é representada por uma matriz `A`, o núcleo corresponde às soluções de `Ax = 0`, enquanto a imagem é o espaço gerado pelas colunas de `A`. Pelo teorema do posto e da nulidade:
+A imagem de `T` e o conjunto de todos os vetores que podem ser obtidos pela transformacao:
 
 ```text
-dim(Ker(T)) + dim(Im(T)) = dim(domínio de T)
+Im(T) = {T(v) | v em V}
 ```
 
-Uma transformação é injetiva quando vetores diferentes têm imagens diferentes, o que equivale a `Ker(T) = {0}`. É sobrejetiva quando `Im(T)` coincide com o contradomínio. Quando é simultaneamente injetiva e sobrejetiva, ela é bijetiva e possui uma transformação inversa.
+O nucleo e um subespaco de `V`, e a imagem e um subespaco de `W`. Alem disso:
 
-### Exemplos
+```text
+T e injetiva  <=>  Ker(T) = {0}
+T e sobrejetiva <=> Im(T) = W
+```
 
-Considere a transformação `T: R^2 -> R^2` definida por:
+Quando `T` e injetiva e sobrejetiva ao mesmo tempo, ela e bijetiva e recebe o nome de isomorfismo. Se o dominio e o contradominio sao o mesmo espaco, `T` e um endomorfismo ou operador linear.
+
+### Teorema do posto e da nulidade
+
+Se `V` tem dimensao finita, entao:
+
+```text
+dim(V) = dim(Ker(T)) + dim(Im(T))
+```
+
+Isso significa que a dimensao do dominio se divide entre a nulidade, isto e, a dimensao do nucleo, e o posto, que e a dimensao da imagem. Para um operador de um espaco finito nele mesmo, ser injetivo, sobrejetivo ou bijetivo sao condicoes equivalentes.
+
+### Representacao por matrizes
+
+Depois que bases sao escolhidas, toda transformacao linear de `R^n` em `R^m` pode ser representada por uma matriz `A`:
+
+```text
+T(x) = A x
+```
+
+O nucleo corresponde as solucoes de `A x = 0`, e a imagem e o subespaco gerado pelas colunas de `A`.
+
+Considere:
 
 ```text
 T(x, y) = (x + y, x - y)
+
+A = [ 1   1 ]
+    [ 1  -1 ]
 ```
 
-Ela é linear, pois, para quaisquer vetores `u` e `v` e escalares `a` e `b`, vale:
-
-```text
-T(au + bv) = aT(u) + bT(v)
-```
-
-A transformação pode ser representada pela matriz:
-
-```text
-A = [ 1  1 ]
-	[ 1 -1 ]
-```
-
-Assim, `T(x, y) = A [x, y]^T`. Para encontrar o núcleo, resolvemos:
+Para determinar o nucleo, resolvemos:
 
 ```text
 x + y = 0
 x - y = 0
 ```
 
-A única solução é `x = y = 0`, portanto `Ker(T) = {(0, 0)}`. Como o núcleo tem dimensão zero e o domínio tem dimensão dois, o teorema do posto e da nulidade mostra que `dim(Im(T)) = 2`. Logo, a imagem é todo `R^2`, e `T` é injetiva, sobrejetiva e bijetiva.
-
-Sua inversa pode ser obtida resolvendo `T(x, y) = (r, s)`:
+A unica solucao e `(x, y) = (0, 0)`. Portanto, `Ker(T) = {(0, 0)}`. Pelo teorema do posto e da nulidade, a imagem tem dimensao 2 e coincide com `R^2`; logo, `T` e bijetiva. Sua inversa e:
 
 ```text
-x = (r + s)/2
-y = (r - s)/2
+T^(-1)(r, s) = ((r + s)/2, (r - s)/2)
 ```
 
-Portanto:
+### Transformacoes geometricas em `R^2`
+
+Rotacoes, reflexoes e projecoes sao exemplos importantes de transformacoes lineares. Algumas matrizes associadas sao:
 
 ```text
-T⁻¹(r, s) = ((r + s)/2, (r - s)/2)
+Rotacao de 90 graus:
+[ 0  -1 ]
+[ 1   0 ]
+
+Reflexao no eixo x:
+[ 1   0 ]
+[ 0  -1 ]
+
+Reflexao no eixo y:
+[-1   0 ]
+[ 0   1 ]
+
+Projecao no eixo y:
+[ 0   0 ]
+[ 0   1 ]
 ```
 
-Outro exemplo é a projeção no eixo `x`, dada por `P(x, y) = (x, 0)`. Nesse caso, `Ker(P)` é o eixo `y` e `Im(P)` é o eixo `x`. A projeção não é injetiva, pois diferentes vetores podem ter a mesma imagem, nem sobrejetiva em `R^2`, pois seus resultados sempre pertencem ao eixo `x`.
+Por exemplo, a projecao `P(x, y) = (0, y)` tem como nucleo o eixo `x` e como imagem o eixo `y`. Ela nao e injetiva em `R^2`, pois pontos diferentes do mesmo alinhamento vertical podem ter a mesma imagem.
+
+<!-- Fonte consultada: [Transformacao linear - Wikipedia](https://pt.wikipedia.org/wiki/Transforma%C3%A7%C3%A3o_linear), acesso em 2026-11-05. -->

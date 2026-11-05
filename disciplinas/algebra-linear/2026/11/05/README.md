@@ -124,4 +124,112 @@ Projecao no eixo y:
 
 Por exemplo, a projecao `P(x, y) = (0, y)` tem como nucleo o eixo `x` e como imagem o eixo `y`. Ela nao e injetiva em `R^2`, pois pontos diferentes do mesmo alinhamento vertical podem ter a mesma imagem.
 
-<!-- Fonte consultada: [Transformacao linear - Wikipedia](https://pt.wikipedia.org/wiki/Transforma%C3%A7%C3%A3o_linear), acesso em 2026-11-05. -->
+## Autovalor e autovetor
+
+Considere um operador linear `T: V -> V`. Um vetor nao nulo `v` e um autovetor de `T` quando a aplicacao transforma `v` em um multiplo dele proprio:
+
+```text
+T(v) = lambda v, com v diferente de 0
+```
+
+O escalar `lambda` e o autovalor associado a `v`. Em outras palavras, um autovetor mantem sua direcao depois da transformacao; o autovalor indica como seu comprimento e sentido sao alterados:
+
+- se `lambda > 1`, o vetor e ampliado;
+- se `0 < lambda < 1`, o vetor e reduzido;
+- se `lambda = 1`, o vetor permanece inalterado;
+- se `lambda = 0`, o vetor e enviado ao vetor nulo;
+- se `lambda < 0`, alem da alteracao de escala, o sentido e invertido.
+
+Para uma matriz quadrada `A`, a equacao de autovalor e:
+
+```text
+A v = lambda v
+```
+
+Reorganizando os termos, obtemos:
+
+```text
+(A - lambda I)v = 0
+```
+
+Como `v` deve ser diferente de zero, o sistema homogeneo precisa ter solucoes nao triviais. Isso acontece quando a matriz `A - lambda I` e singular, isto e, quando seu determinante e zero:
+
+```text
+det(A - lambda I) = 0
+```
+
+A expressao `p(lambda) = det(A - lambda I)` e chamada de polinomio caracteristico. Suas raizes sao os autovalores de `A`.
+
+### Exemplo de calculo
+
+Considere a matriz:
+
+```text
+A = [ 3  1 ]
+        [ 0  2 ]
+```
+
+O polinomio caracteristico e:
+
+```text
+det(A - lambda I) = det([ 3 - lambda   1       ])
+                                        det([ 0             2-lambda])
+                                    = (3 - lambda)(2 - lambda)
+```
+
+Logo, os autovalores sao `lambda = 3` e `lambda = 2`.
+
+Para `lambda = 3`, resolvemos `(A - 3I)v = 0`:
+
+```text
+[ 0  1 ] [x] = [0]
+[ 0 -1 ] [y]   [0]
+```
+
+Assim, `y = 0` e `x` pode ser qualquer numero. Os autovetores associados a `lambda = 3` sao os vetores nao nulos da forma:
+
+```text
+v = (x, 0), com x diferente de 0
+```
+
+Para `lambda = 2`, resolvemos `(A - 2I)v = 0`:
+
+```text
+[ 1  1 ] [x] = [0]
+[ 0  0 ] [y]   [0]
+```
+
+Nesse caso, `x + y = 0`, portanto os autovetores associados a `lambda = 2` sao os vetores nao nulos da forma:
+
+```text
+v = (x, -x), com x diferente de 0
+```
+
+### Espaco proprio e multiplicidades
+
+Para um autovalor `lambda`, o espaco proprio associado e o conjunto formado pelo vetor nulo e por todos os autovetores correspondentes:
+
+```text
+E_lambda = Ker(A - lambda I)
+```
+
+O autovalor pode aparecer mais de uma vez como raiz do polinomio caracteristico. O numero de ocorrencias e sua multiplicidade algebrica. A dimensao do espaco proprio e a multiplicidade geometrica. Sempre vale:
+
+```text
+1 <= multiplicidade geometrica <= multiplicidade algebrica
+```
+
+Uma matriz `n x n` e diagonalizavel quando possui uma base formada por `n` autovetores linearmente independentes. Nesse caso, existe uma matriz invertivel `P` e uma matriz diagonal `D` tais que:
+
+```text
+A = P D P^(-1)
+```
+
+As colunas de `P` sao autovetores de `A`, e os elementos da diagonal de `D` sao os autovalores correspondentes.
+
+## Referencias
+
+- WIKIPEDIA. [Transformacao linear](https://pt.wikipedia.org/wiki/Transforma%C3%A7%C3%A3o_linear). Acesso em: 5 nov. 2026.
+- WIKIPEDIA. [Autovalor e autovetor](https://pt.wikipedia.org/wiki/Autovalor_e_autovetor). Acesso em: 5 nov. 2026.
+- UNIVERSIDADE FEDERAL DO RIO GRANDE DO SUL. Instituto de Matematica e Estatistica. [Transformacoes lineares e exemplos](https://www.ufrgs.br/reamat/AlgebraLinear/livro/s3-transformax00e7x00f5es_lineares.html). Acesso em: 5 nov. 2026.
+- LIMA, Elon Lages. *Algebra Linear*. 9. ed. Rio de Janeiro: IMPA, 2016.
